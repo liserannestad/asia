@@ -54,9 +54,9 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/*.btn:hover {
+.btn:hover {
     background-color: #FAF9F6;
-}*/
+}
 
 .gif_container {
     display: flex;
