@@ -1,40 +1,66 @@
-html {
-	overflow-y: scroll;
-}
-
 body {
-	background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F8C8DC;
 }
 
-h1 {
-	color: white;
-	font-family: arial;
-	text-align: center;
-	margin-top: 20%;
+/* Position the "No" button absolutely within body */
+#noButton {
+    position: absolute;
+    margin-left: 150px;
+    transition: 0.5s;
+    /* Smooth movement */
 }
 
-.animation {
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 10%;
+#yesButton {
+    position: absolute;
+    margin-right: 150px;
+    /* Smooth movement */
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .buttons {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    /* optional: adds some space between the buttons */
 }
 
-.yes {
-	background-color: white;
-	margin-right: 10px;
+.btn {
+    background-color: #FFB6C1;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
 }
 
-.no {
-	background-color: white;
+.btn:hover {
+    background-color: #FAF9F6;
 }
 
-#btn {
-    transition: .5s;
-    background-color: white;
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
